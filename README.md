@@ -75,5 +75,16 @@ Site A - Main Office | Site B - Branch Office
   
 3- Third, we will create routes.
 
+![routes](https://user-images.githubusercontent.com/44748406/193416820-a70822f8-0f0e-4013-a32e-e829c48330c8.png)
 
-     Thank you.
+  
+  Finally everything should be OK and you will be able to ping and access resources between two Sites and local networks.
+  
+  Both sites authenticated and connected
+  ![connection](https://user-images.githubusercontent.com/44748406/193417048-2dacda41-06fa-4efe-8497-c9b531a344e9.png)
+  
+  Lan's between sites can ping each other
+  ![pingok](https://user-images.githubusercontent.com/44748406/193417165-8b2fc338-e386-4b1c-a8f1-81053801fd97.png)
+ 
+
+  Thank you.
