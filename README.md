@@ -6,7 +6,7 @@ Site A - Main Office | Site B - Branch Office
 1- First, we will create Policie, Proposal, Peer, Identities, Profile. `IP->>IPsec`
 
  - Profile Creation
-![lanbridge](https://user-images.githubusercontent.com/44748406/193254479-f1898c81-8f45-4d17-9e12-902a34fed6ff.png)
+![Profile](https://user-images.githubusercontent.com/44748406/193414552-2e201c25-00ea-48b0-8d8b-62ed61cbed36.png)
  - Creation of the network address. `IP->Addresses`
 ![address](https://user-images.githubusercontent.com/44748406/193254730-3a1779bc-62c4-4bf6-9309-b6e6e05a2d86.png)
  - Creation of the IP Pool. You can set a desidered addresses range depending on how many clients will connect to the VPN. `IP->Pool`
