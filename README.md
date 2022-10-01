@@ -3,14 +3,18 @@ Configure Site to Site(Main Office and Branch Office) VPN connection using IPsec
 
 Site A - Main Office | Site B - Branch Office
 
-1- First, we will create Policie, Proposal, Peer, Identities, Profile. `IP->>IPsec`
+1- First, we will create Policy, Proposal, Peer, Identities, Profile. `IP->>IPsec`
 
  - Profile Creation
 ![Profile](https://user-images.githubusercontent.com/44748406/193414552-2e201c25-00ea-48b0-8d8b-62ed61cbed36.png)
  - Peer creation
 ![peer](https://user-images.githubusercontent.com/44748406/193414750-deb072fa-b5e0-4a8f-8835-b1a79168329f.png)
- - Identity creation
+ - Identity creation(Pre-shared key must be same on both routers)
 ![identity](https://user-images.githubusercontent.com/44748406/193414860-47b7c8c5-22e8-4030-a28c-5ead38a0c61e.png)
+ - Proposal creation
+![proposal](https://user-images.githubusercontent.com/44748406/193415219-f5ead7d0-7219-419c-8b08-8c2e3efe4426.png)
+ - Policy creation(Src is local lan of site A and Dst is local lan of Site B, Src is local lan of site B and Dst is local lan of Site A)
+![policy](https://user-images.githubusercontent.com/44748406/193415227-ce5ec561-afce-416f-a1c4-4781ef1dcde9.png)
 
 2- Secondly, we have to create the firewall and NAT rule for the VPN to be able for the clients to communicate with the VPN Server.
 
