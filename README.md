@@ -7,10 +7,10 @@ Site A - Main Office | Site B - Branch Office
 
  - Profile Creation
 ![Profile](https://user-images.githubusercontent.com/44748406/193414552-2e201c25-00ea-48b0-8d8b-62ed61cbed36.png)
- - Creation of the network address. `IP->Addresses`
-![address](https://user-images.githubusercontent.com/44748406/193254730-3a1779bc-62c4-4bf6-9309-b6e6e05a2d86.png)
- - Creation of the IP Pool. You can set a desidered addresses range depending on how many clients will connect to the VPN. `IP->Pool`
-![pool](https://user-images.githubusercontent.com/44748406/193254910-0f2760db-7dfb-4fb4-942c-b99b5aa4fce7.png)
+ - Peer creation
+![peer](https://user-images.githubusercontent.com/44748406/193414750-deb072fa-b5e0-4a8f-8835-b1a79168329f.png)
+ - Identity creation
+![identity](https://user-images.githubusercontent.com/44748406/193414860-47b7c8c5-22e8-4030-a28c-5ead38a0c61e.png)
 
 2- Secondly, we have to create the firewall and NAT rule for the VPN to be able for the clients to communicate with the VPN Server.
 
