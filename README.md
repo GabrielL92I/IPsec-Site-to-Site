@@ -20,56 +20,56 @@ Site A - Main Office | Site B - Branch Office
 
 - Creation of the firewall filter rule. `IP->Firewall->Filter Rules`
 
-  Chain: Forward
-  IPsec Policy: IN / ipsec
-  Action: Accept
+  -Chain: Forward
+  -IPsec Policy: IN / ipsec
+  -Action: Accept
 
-  Chain: Forward
-  IPsec Policy: OUT / ipsec
-  Action: Accept
+  -Chain: Forward
+  -IPsec Policy: OUT / ipsec
+  -Action: Accept
 
-  Chain: Forward
-  Connection State: estabilished, related
-  Action: fasttrack connection
+  -Chain: Forward
+  -Connection State: estabilished, related
+  -Action: fasttrack connection
 
-  Chain: Forward
-  Connection State: estabilished, related
-  Action: Accept
+  -Chain: Forward
+  -Connection State: estabilished, related
+  -Action: Accept
 
-  Chain: Input
-  Src. Address: 192.168.70.0/24
-  Action: Accept
+  -Chain: Input
+  -Src. Address: 192.168.70.0/24
+  -Action: Accept
 
-  Chain: Input
-  Src. Address: 192.168.1.0/24
-  Action: Accept
+  -Chain: Input
+  -Src. Address: 192.168.1.0/24
+  -Action: Accept
 
 ![firewall](https://user-images.githubusercontent.com/44748406/193416342-1a589747-90fb-4813-a612-6dabf1647542.png)
 
 - Creation of the NAT rule(only if you don't have this rule already). `IP->Firewall->NAT`
 
-  SITE A
+  -SITE A
 
-  Chain: srcnat
-  Src. 192.168.70.0/24
-  Dst. 192.168.1.0/24
-  Action: Accept
+  -Chain: srcnat
+  -Src. 192.168.70.0/24
+  -Dst. 192.168.1.0/24
+  -Action: Accept
 
-  Chain: srcnat
-  Out. Interface: ether1-WAN
-  Action: masquerade
+  -Chain: srcnat
+  -Out. Interface: ether1-WAN
+  -Action: masquerade
 
 
-  SITE B
+  -SITE B
 
-  Chain: srcnat
-  Src. 192.168.1.0/24
-  Dst. 192.168.70.0/24
-  Action: Accept
+  -Chain: srcnat
+  -Src. 192.168.1.0/24
+  -Dst. 192.168.70.0/24
+  -Action: Accept
 
-  Chain: srcnat
-  Out. Interface: ether1-WAN
-  Action: masquerade
+  -Chain: srcnat
+  -Out. Interface: ether1-WAN
+  -Action: masquerade
   
 ![nat](https://user-images.githubusercontent.com/44748406/193416374-c3bce23b-ff75-4f97-b879-b3856487d4ae.png)
   
