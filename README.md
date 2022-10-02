@@ -43,6 +43,10 @@ Site A - Main Office | Site B - Branch Office
   -Chain: Input
   -Src. Address: 192.168.1.0/24
   -Action: Accept
+  
+  -Chain: Input
+  -Protocol: ipsec-esp
+  -Action: Accept
 
 ![firewall](https://user-images.githubusercontent.com/44748406/193416342-1a589747-90fb-4813-a612-6dabf1647542.png)
 
